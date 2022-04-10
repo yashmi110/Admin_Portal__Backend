@@ -1,8 +1,8 @@
-package net.javaguides.springboot.repository;
+package net.javaguides.springboot.dao;
 
 import net.javaguides.springboot.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EmployeeRepository extends JpaRepository <Employee,Long> {
+public interface EmployeeDao extends JpaRepository <Employee,Long> {
     //all crud database methods
 }

@@ -1,7 +1,6 @@
 package net.javaguides.springboot;
 
-import net.javaguides.springboot.model.Employee;
-import net.javaguides.springboot.repository.EmployeeRepository;
+import net.javaguides.springboot.dao.EmployeeDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +15,7 @@ public class SpringbootBackendApplication implements CommandLineRunner {
 	}
 
 	@Autowired
-	private EmployeeRepository employeeRepository;
+	private EmployeeDao employeeDao;
 
 	@Override
 	public void run(String... args) throws Exception {
