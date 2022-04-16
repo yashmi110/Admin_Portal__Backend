@@ -45,6 +45,7 @@ public class JWTUserDetailsService implements UserDetailsService {
         newUser.setUsername(user.getUsername());
         newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
         //newUser.setPassword((user.getPassword()));
+        newUser.setEmail(user.getEmail());
 
         return userDao.save(newUser);
     }
